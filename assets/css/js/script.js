@@ -23,8 +23,8 @@ function generatePassword() {
 while(confirmLength<=7||confirmLength>=129) {
     alert("Password length must be between 8-128 characters long. Try again.");
     var confirmLength = window.prompt("How Many Characters Would You Like Your Password To Be?");
-}
 
+}
 
 //determine criteria of password
 var confirmSymbols = confirm("Click OK if you would like symbols to be included in your password");
@@ -72,11 +72,11 @@ else if (confirmSymbols && confirmNumbers) {
 }
 // Else if for 1 positive option
 else if (confirmSymbols) {
-    choices = symbols;
+    choices = (symbols);
 }else if (confirmNumbers) {
-    choices = numbers;
+    choices = (numbers);
 }else if (confirmLower) {
-    choices = alphaLower;
+    choices = (alphaLower);
 }else if (confirmUpper) {
     choices = (alphaUpper);
 };
@@ -89,7 +89,7 @@ var password = "";
 }
 return password;
 
- generatePassword();
+generatePassword();
 
 }
 //Write password to the #password input
