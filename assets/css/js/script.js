@@ -32,8 +32,15 @@ var confirmNumbers = confirm("Click OK if you would like numbers to be included 
 var confirmLower = confirm("Click OK if you would like lowercase letters to be included in your password");
 var confirmUpper = confirm("Click OK if you would like uppercase letters to be included in your password");
 
+//if user does not select any of the prompts
+while(confirmUpper === false && confirmLower === false && confirmSymbols === false && confirmNumbers === false) {
+    alert("You must choose at least one option!");
+    var confirmSymbols = confirm("Click OK if you would like symbols to be included in your password");
+    var confirmNumbers = confirm("Click OK if you would like numbers to be included in your password");    
+    var confirmLower = confirm("Click OK if you would like lowercase letters to be included in your passwords");
+    var confirmUpper = confirm("Click OK if you would like uppercase letters to be included in your password");
 
-
+}
 
 
 //apply input promts to generate password
